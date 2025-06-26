@@ -1,7 +1,7 @@
-include<stdio.h>
+#include <stdio.h>
 
-    // Iterative Funktion zur Berechnung der Summe der ersten n natürlichen Zahlen
-    int summe_iterativ(int n)
+// Iterative Funktion zur Berechnung der Summe der ersten n natürlichen Zahlen
+int summe_iterativ(int n)
 {
   int summe = 0;
   for (int i = 1; i <= n; ++i)
