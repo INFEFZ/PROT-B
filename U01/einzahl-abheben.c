@@ -7,6 +7,7 @@ float kontostand = 1000.0; // Anfangsbetrag
 void einzahlen()
 {
   float betrag; // Lokale Variable
+  
   printf("Geben Sie den Betrag zum Einzahlen ein: ");
   scanf("%f", &betrag);
 
