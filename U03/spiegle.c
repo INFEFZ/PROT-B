@@ -16,6 +16,7 @@ int main(void)
 {
   printf("\n\n\n");
   spiegle();
+  printf("\n\n\n");
 
   return 0;
 }
