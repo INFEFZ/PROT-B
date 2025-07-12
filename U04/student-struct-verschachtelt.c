@@ -9,49 +9,57 @@ struct Geburtsdatum
   int jahr;
 };
 
-// Definition der Hauptstruktur Student
+// Definition der Struktur Student
 struct Student
 {
-  char name[50];
   int matrikelnummer;
+  char name[50];
   float durchschnittsnote;
-  struct Geburtsdatum geb;
+  struct Geburtsdatum geburtsdatum;
 };
 
-// Funktionsdefinition zur Ausgabe
-void druckeStudent(struct Student s)
+// Funktion zur Ausgabe der Studentendaten
+void printStudent(struct Student s)
 {
-  printf("Name: %s\n", s.name);
   printf("Matrikelnummer: %d\n", s.matrikelnummer);
-  printf("Durchschnittsnote: %.2f\n", s.durchschnittsnote);
-  printf("Geburtsdatum: %02d.%02d.%d\n", s.geb.tag, s.geb.monat, s.geb.jahr);
+  printf("Name: %s\n", s.name);
+  printf("Durchschnittsnote: %.1f\n\n", s.durchschnittsnote);
+  printf("Geburtsdatum: %02.02d.%d\n\n", s.geburtsdatum.tag, s.geburtsdatum.monat, s.geburtsdatum.jahr);
 }
 
-int main()
+// Funktion zur Erstellung eines neuen Studenten
+struct Student createStudent(int matrikelnummer, char name[], float durchschnittsnote, int tag, int monat, int jahr)
 {
-  // Initialisierung
-  struct Student student1 = {
-      "Anna Schreiber",
-      123456,
-      2.1,
-      {15, 7, 2002}};
+  struct Student s;
+  s.matrikelnummer = matrikelnummer;
+  strcpy(s.name, name);
+  s.durchschnittsnote = durchschnittsnote;
+  s.geburtsdatum.tag = tag;
+  s.geburtsdatum.monat = monat;
+  s.geburtsdatum.jahr = jahr;
 
-  // Ausgabe direkt
-  printf("Direktausgabe:\n");
-  printf("Name: %s\n", student1.name);
-  printf("Matrikelnummer: %d\n", student1.matrikelnummer);
-  printf("Durchschnittsnote: %.2f\n", student1.durchschnittsnote);
-  printf("Geburtsdatum: %02d.%02d.%d\n", student1.geb.tag, student1.geb.monat, student1.geb.jahr);
+  return s;
+}
 
-  // Ausgabe über Funktion
-  printf("\nAusgabe über Funktion:\n");
-  druckeStudent(student1);
+struct Geburtsdatum createGeburtstag(int tag, int monat, int jahr)
+{
+  struct Geburtsdatum gdatum = {tag, monat, jahr};
+  return gdatum;
+}
 
-  // Ausgabe über Zeiger
-  struct Student *ptr = &student1;
-  printf("\nAusgabe über Zeiger:\n");
-  printf("Name: %s\n", ptr->name);
-  printf("Note: %.2f\n", ptr->durchschnittsnote);
+void main()
+{
+  // Array zur Speicherung von 3 Studenten
+  struct Student studenten[3] = {0};
 
-  return 0;
+  // Informationen der Studenten ausfüllen
+  studenten[0] = createStudent(12345, "Max Mustermann", 5.3, 1, 3, 1999);
+  studenten[1] = createStudent(23456, "Julia Schmidt", 5.0, 10, 4, 2000);
+  studenten[2] = createStudent(34567, "John Doe", 4.1, 20, 5, 2002);
+
+  // Informationen der Studenten ausgeben
+  for (int i = 0; i < 3; i++)
+  {
+    printStudent(studenten[i]);
+  }
 }
