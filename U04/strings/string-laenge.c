@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX 100
+#define MAX 101
 
 int main()
 {
