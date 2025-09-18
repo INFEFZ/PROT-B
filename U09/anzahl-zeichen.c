@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 void main()
 {
   FILE *file;
@@ -23,7 +24,7 @@ void main()
     {
       lines++;
     }
-    
+
     if (character == ' ')
     {
       word = 0;
