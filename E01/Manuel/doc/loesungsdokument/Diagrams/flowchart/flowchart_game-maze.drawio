@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.1.2">
+  <diagram name="Seite-1" id="FEIYgxmxdy7Hw-t4VP4N">
+    <mxGraphModel dx="1892" dy="1298" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-2" target="LOcCv_XB3pFeRReCQXh0-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Spiel starten" id="LOcCv_XB3pFeRReCQXh0-2">
+          <mxCell style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+            <mxGeometry x="190" y="10" width="100" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-3" value="Spiel beenden" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="190" y="900" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-66" target="LOcCv_XB3pFeRReCQXh0-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="450" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="400" />
+              <mxPoint x="360" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-60" value="ungültig" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LOcCv_XB3pFeRReCQXh0-59" vertex="1" connectable="0">
+          <mxGeometry x="-0.0824" y="3" relative="1" as="geometry">
+            <mxPoint x="-17" y="53" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-10" target="LOcCv_XB3pFeRReCQXh0-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-10" value="&lt;div&gt;Labyrinth, Spieler, Schatz initialisiern&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-16" value="Spielereingabe einlesen&lt;div&gt;(w/a/s/d/q)&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G4eDrJckf11vgxdoLS-3-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="LOcCv_XB3pFeRReCQXh0-25" target="G4eDrJckf11vgxdoLS-3-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-25" value="Spielerposition aktualisieren" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-34" target="LOcCv_XB3pFeRReCQXh0-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-77" value="ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LOcCv_XB3pFeRReCQXh0-71" vertex="1" connectable="0">
+          <mxGeometry x="-0.2069" y="1" relative="1" as="geometry">
+            <mxPoint x="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-34" target="LOcCv_XB3pFeRReCQXh0-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="730" />
+              <mxPoint x="600" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-76" value="nein" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LOcCv_XB3pFeRReCQXh0-75" vertex="1" connectable="0">
+          <mxGeometry x="-0.9305" y="-2" relative="1" as="geometry">
+            <mxPoint x="-9" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-34" value="Steht Spieler auf Schatz?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="180" y="670" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-39" value="&lt;div&gt;Siegesmeldung anzeigen&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-39" target="LOcCv_XB3pFeRReCQXh0-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-48" target="LOcCv_XB3pFeRReCQXh0-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-48" value="&lt;div&gt;Labyrinth anzeigen&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-66" target="LOcCv_XB3pFeRReCQXh0-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-74" value="w/a/s/d" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LOcCv_XB3pFeRReCQXh0-69" vertex="1" connectable="0">
+          <mxGeometry x="-0.2529" y="-1" relative="1" as="geometry">
+            <mxPoint x="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-66" value="Eingabe gültig?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="180" y="340" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-16" target="LOcCv_XB3pFeRReCQXh0-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="LOcCv_XB3pFeRReCQXh0-66" target="LOcCv_XB3pFeRReCQXh0-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="400" />
+              <mxPoint x="120" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LOcCv_XB3pFeRReCQXh0-73" value="q" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LOcCv_XB3pFeRReCQXh0-72" vertex="1" connectable="0">
+          <mxGeometry x="-0.8744" y="4" relative="1" as="geometry">
+            <mxPoint y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G4eDrJckf11vgxdoLS-3-1" value="Labyrinth neu anzeigen" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G4eDrJckf11vgxdoLS-3-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="G4eDrJckf11vgxdoLS-3-1" target="LOcCv_XB3pFeRReCQXh0-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

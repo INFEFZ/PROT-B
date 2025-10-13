@@ -1,0 +1,14 @@
+# Build-Artefakte ignorieren
+labyrinth
+tests/test_moves
+
+# Kompilierte Dateien
+*.o
+*.obj
+*.exe
+
+# Build-Ordner
+/build/
+
+# MacOS-Dateien
+.DS_Store

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Diagramm"/>
+        <attribute name="authors" value="Phile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-27 06:52:58 AM"/>
+        <attribute name="created" value="UGhpbGU7UEhJTEU7MjAyNS0wOC0yNDswODoxMzowOCBBTTsyMTQw"/>
+        <attribute name="edited" value="UGhpbGU7UEhJTEU7MjAyNS0wOC0yNzswNjo1Mjo1OCBBTTs0OzIyNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="Labyrinth"/>
+            <call expression="Schatz"/>
+            <call expression="Spieler"/>
+            <output expression="&quot;Das Spiel beginnt.&quot;" newline="True"/>
+            <call expression="Labyrinth"/>
+            <call expression="Eingabe"/>
+        </body>
+    </function>
+    <function name="Eingabe" type="Integer" variable="posi">
+        <parameters/>
+        <body>
+            <output expression="&quot;Bewege den Spieler (W/A/S/D)&quot;" newline="True"/>
+            <output expression="&quot;Speil Abbrechen (E): &quot;" newline="True"/>
+            <input variable="eingabe"/>
+            <if expression="Eingabe">
+                <then>
+                    <if expression="E">
+                        <then>
+                            <output expression="&quot;Spiel wurde vom Spieler abgebrochen.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="P">
+                                <then>
+                                    <output expression="&quot;Hinternis im weg, nehmen sie einen anderen Weg.&quot;" newline="True"/>
+                                    <call expression="Eingabe"/>
+                                </then>
+                                <else>
+                                    <if expression="T">
+                                        <then>
+                                            <output expression="&quot;Gl&#252;ckwunsch, du das den Schatz erreicht.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <call expression="Labyrinth"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Eingabe ung&#252;ltig. Bitte Wiederhollen.&quot;" newline="True"/>
+                    <call expression="Eingabe"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="Labyrinth" type="String" variable="feld">
+        <parameters/>
+        <body>
+            <declare name="feld" type="Integer" array="False" size=""/>
+        </body>
+    </function>
+    <function name="Schatz" type="String" variable="posi">
+        <parameters/>
+        <body>
+            <declare name="T" type="Integer" array="False" size=""/>
+            <assign variable="T" expression="feld"/>
+        </body>
+    </function>
+    <function name="Spieler" type="String" variable="posi">
+        <parameters/>
+        <body>
+            <declare name="P" type="Integer" array="False" size=""/>
+            <assign variable="P" expression="Feld"/>
+        </body>
+    </function>
+</flowgorithm>

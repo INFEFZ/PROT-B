@@ -1,0 +1,6 @@
+rm -rf build bin/labyrinth.exe
+mkdir -p build
+gcc -std=c11 -Wall -Wextra -O2 -Isrc -MMD -MP -c src/game.c -o build/game.o
+gcc -std=c11 -Wall -Wextra -O2 -Isrc -MMD -MP -c src/main.c -o build/main.o
+gcc -std=c11 -Wall -Wextra -O2 -Isrc -MMD -MP -c src/maze.c -o build/maze.o
+gcc -std=c11 -Wall -Wextra -O2 -Isrc build/game.o build/main.o build/maze.o -o bin/labyrinth.exe
