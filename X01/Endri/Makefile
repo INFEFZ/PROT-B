@@ -2,7 +2,7 @@ CC ?= gcc
 CFLAGS ?= -std=c11 -Wall -Wextra -O2
 INCLUDES = -Iinclude
 
-SRC = src/main.c src/game.c src/maze.c src/input.c src/utils.c
+SRC = main.c game.c maze.c input.c utils.c
 OBJ = $(SRC:.c=.o)
 
 TARGET = labyrinth
