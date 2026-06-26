@@ -1,0 +1,120 @@
+# ==========================================
+# C Build Artifacts
+# ==========================================
+
+# Object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Libraries
+*.a
+*.la
+*.lib
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug symbols
+*.dSYM/
+*.pdb
+
+# ==========================================
+# Build directories
+# ==========================================
+
+build/
+Build/
+bin/
+obj/
+Debug/
+Release/
+cmake-build-*/
+
+# ==========================================
+# CMake
+# ==========================================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+install_manifest.txt
+
+# ==========================================
+# Make
+# ==========================================
+
+*.d
+
+# ==========================================
+# Autotools
+# ==========================================
+
+autom4te.cache/
+aclocal.m4
+compile
+config.guess
+config.log
+config.status
+config.sub
+configure
+depcomp
+install-sh
+libtool
+ltmain.sh
+missing
+m4/
+
+# ==========================================
+# VS Code
+# ==========================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ==========================================
+# GitHub Codespaces / Dev Containers
+# ==========================================
+
+.devcontainer/.cache/
+
+# ==========================================
+# macOS
+# ==========================================
+
+.DS_Store
+
+# ==========================================
+# Windows
+# ==========================================
+
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Linux
+# ==========================================
+
+*~
+*.swp
+*.swo
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log

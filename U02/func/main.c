@@ -14,7 +14,7 @@ tasks.json
 */
 // gcc *.c -o main.exe & ./main.exe
 
-void main(void)
+int main(void)
 {
   int a = 10,
       b = 20;
