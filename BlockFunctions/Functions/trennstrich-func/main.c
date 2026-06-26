@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "func.h"
 
-void main(void)
+int main(void)
 {
   printf("Es werden 80-Trennstricht ausgegeben.\n");
   trennstriche80();
